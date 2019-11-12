@@ -138,3 +138,5 @@ console.log(indefinito2); // result: NaN;
 let indefinito3 = undefined;
 indefinito3 = String(indefinito3);
 console.log(indefinito3); // result: "undefined";
+
+
