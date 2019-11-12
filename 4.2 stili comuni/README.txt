@@ -7,7 +7,7 @@ Riflessioni sull'esercizio:
    ho creato due versioni, una con un menù laterale, una con un menù
    orizzontale (quest'ultimo è anche la versione che adempie alle richieste
    dell'ultima parte dell'esercizio).
-   Avevo inizialmente semplicemente reso body più grande del viewport, in modo
+   Avevo inizialmente semplicemente reso body più alto del viewport, in modo
    da permettermi di scorrere in basso la pagina. Ho successivamente deciso cmq di aggiungere
    elementi HTML.
    Seconda versione è diversa anche nell'utilizzo di :not, e utilizza flexbox all'interno del menù.
