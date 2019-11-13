@@ -1,0 +1,9 @@
+/* Set the transparency/opacity of the <img> element to "0.4". */
+img {
+    opacity: 0.4;
+}
+
+/* Remove the transparency/opacity of the <img> element when the user hovers over it with the mouse pointer. */
+img:hover {
+    opacity: 1;
+}

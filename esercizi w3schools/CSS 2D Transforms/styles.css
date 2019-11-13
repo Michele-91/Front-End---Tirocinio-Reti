@@ -1,0 +1,28 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+/* With the transform property, move the <div> element 100px to the right, and 200px down. */
+div {
+    transform: translateX(100px) translateY(200px);
+    transform: translate(100px, 200px);
+}
+
+/* With the transform property, rotate the <div> element 45 degrees. */
+div {
+    transform: rotate(45deg);
+}
+
+/* With the transform property, change the size of the <div> to half its width, but double its height. */
+div {
+    transform: scale(0.5, 2);
+}
+
+/* With the transform property, skew the <div> element 20 degrees along the X-axis, and 30 degrees along the Y-axis.*/
+div {
+    transform: skewX(20deg) skewY(30deg);
+    transform: skew(20deg, 30deg);
+}

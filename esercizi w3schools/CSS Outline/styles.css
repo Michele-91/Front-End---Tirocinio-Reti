@@ -1,0 +1,15 @@
+/* Set a "solid", "5px" outline for <p>. */
+p {
+    outline-style: solid;
+    outline-width: 5px;
+}
+
+/* Set the outline color for <p> to "green". */
+p {
+    outline-color: green;
+}
+
+/*  With the outline property: Set the outline for p to "red", "dotted" and "10px".*/
+p {
+    outline: 10px dotted red;
+}

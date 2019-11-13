@@ -1,0 +1,21 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+/* With the transform property, rotate the <div> element 150deg around its X-axis. */
+div {
+    transform: rotateX(150deg);
+}
+
+/* With the transform property, rotate the <div> element 120deg around its Y-axis. */
+div {
+    transform: rotateY(120deg);
+}
+
+/* With the transform property, rotate the <div> element 90deg around its Z-axis. */
+div {
+    transform: rotateZ(90deg);
+}

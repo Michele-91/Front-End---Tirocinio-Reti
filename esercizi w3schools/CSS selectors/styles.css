@@ -1,0 +1,26 @@
+/* change the color of all <p> elements to "red" */
+p {
+    color: red;
+}
+
+
+/* Change the color of the element with id="para1", to "red".
+ */
+
+ #para1 {
+     color: red;
+ }
+
+ /* Change the color of all elements with the class "colortext", to "red".
+ */
+
+ .colortext {
+     color: red;
+ }
+
+/* Change the color of all <p> and <h1> elements, to "red". Group the selectors to minimize code.
+ */
+
+ h1, p {
+     color: red;
+ }

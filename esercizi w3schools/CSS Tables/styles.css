@@ -1,0 +1,32 @@
+/* Set the border to "2px solid green" for table, th and td elements. */
+table, 
+th,
+td {
+    border: 2px solid green;
+}
+
+/* Collapse the table borders into a single border. */
+table {
+    border-collapse: collapse;
+}
+
+/* Set the width of the table to "100%". */
+table {
+    width: 100%;
+}
+
+/* Set the text alignment in <td> elements to "right". */
+td {
+    text-align: right;
+}
+
+/* Set the padding in <th> elements to "15px". */
+th {
+    padding: 15px;
+}
+
+
+/*  Set the background color of <th> elements to "lightblue".*/
+th {
+    background-color: lightblue;
+}

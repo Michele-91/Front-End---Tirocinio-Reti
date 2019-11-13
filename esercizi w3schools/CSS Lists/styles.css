@@ -1,0 +1,24 @@
+/* Set the list style for unordered lists to "square", and the list style for ordered lists to "upper-roman". */
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+/* Set the image "sqpurple.gif" as the list item marker for the unordered list. */
+ul {
+    list-style-image: url('sqpurple.gif')
+}
+
+/* With the list-style property: Set the unordered list marker to "img_marker.png", with a backup style of "circle", and display the markers inside the content flow. */
+ul {
+    list-style-image: circle inside url('img_marker.png');
+}
+
+/* Remove the bullets/markers from the list items. */
+ul,
+ol {
+    list-style-type: none;
+}

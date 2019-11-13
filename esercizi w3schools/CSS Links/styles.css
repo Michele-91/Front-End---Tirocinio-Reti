@@ -1,0 +1,35 @@
+/* Set the color for links to "green". */
+a {
+    color: green;
+}
+
+/*Set the color for unvisited links to "red", and the color for visited links "blue". */
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+/* Remove underlines for visited and unvisited links, and specify "underline" for the hover and active link states. */
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+/* Set the background color for visited and unvisited links to "lightblue", and the background color for the hover and active link states to "yellow". */
+a:link,
+a:visited {
+    background-color: lightblue;
+}
+
+a:hover,
+a:active {
+    background-color: yellow;
+}

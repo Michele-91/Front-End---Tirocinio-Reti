@@ -1,0 +1,18 @@
+p {
+    background-color: lightblue;
+}
+
+/* Set the top padding of <p> to "30px".*/
+p {
+    padding-top: 30px;
+}
+
+/* Set all paddings for <p> to "50px". */
+p {
+    padding: 50px;
+}
+
+/* Use the padding property to set the top and bottom paddings for <p> to "25px", and left and right paddings to "50px". */
+p {
+    padding: 25px 50px;
+}

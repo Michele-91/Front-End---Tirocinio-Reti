@@ -1,0 +1,24 @@
+/* Set a "2px" horizontal, and "2px" vertical, text shadow for the <h1> element.*/
+h1 {
+    text-shadow: 2px 2px;
+}
+
+/* Change the color of the text shadow to "green", and set a "5px" blur radius. */
+h1 {
+    text-shadow: 2px 2px 5px green;
+}
+
+/* Add a new shadow (do not remove the current one) to the <h1> element with: no horizontal or vertical shadow, 10px blur, and a red color. */
+h1 {
+    text-shadow: 2px 2px 5px green, 0 0 10px red;
+}
+
+/* Set a "10px" horizontal, and "10px" vertical, box shadow for the <div> element. */
+div {
+    box-shadow: 10px 10px;
+}
+
+/* Change the color of the box shadow to "grey", and set a "5px" blur. */
+div {
+    box-shadow: 10px 10px 5px grey;
+}

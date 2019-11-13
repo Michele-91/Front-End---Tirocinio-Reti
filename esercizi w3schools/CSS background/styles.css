@@ -1,0 +1,38 @@
+/* Set the background color for the page to "linen" and the background color for <h1> to "lightblue".
+ */
+
+ body {
+     background-color: linen;
+ }
+
+ h1 {
+     background-color: lightblue;
+ }
+
+ /* Set "paper.gif" as the background image of the page.
+ */
+ body {
+     background-image: url("paper.gif");
+ }
+
+ /* Set "gradient_bg_vertical.png" as the background image of the page, and repeat it vertically only.
+ */
+
+ body {
+     background-image: url(gradient_bg_vertical.png);
+     background-repeat: repeat-y;
+ }
+
+ /* Specify that the background image should be shown once, in the top right corner.
+ */
+ body {
+     background-repeat: no-repeat;
+     background-position: top right;
+ }
+
+/* Use the shorthand background property to set background image to "img_tree.png", show it once, in the top right corner.
+ */
+
+ body {
+     background: url(img_tree.png) no-repeat top right;
+ }

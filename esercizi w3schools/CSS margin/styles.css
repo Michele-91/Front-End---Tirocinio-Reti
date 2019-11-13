@@ -1,0 +1,24 @@
+
+h1 {
+    background-color: lightblue;
+}
+
+/* Set the left margin of <h1> to "20px". */
+h1 {
+    margin-left: 20px;
+}
+
+/* Set all margins for <h1> to "25px". */
+h1 {
+    margin: 25px;
+}
+
+/* Use the margin property to set the top and bottom margins for <h1> to "50px", and left and right margins to "25px". */
+h1 {
+    margin: 50px 25px;
+}
+
+/* Use the margin property to center align the <h1> element. */
+h1 {
+    margin: 0 auto;
+}

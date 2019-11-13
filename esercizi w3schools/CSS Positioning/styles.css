@@ -1,0 +1,46 @@
+h1 {
+    color: red;
+}
+
+/* Position the <h1> element relative to the browser window. 50px from the top, and 50px from the right. */
+h1 {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+/* Position the <h1> element 20px left, and 30px down, relative to its normal position. */
+h1 {
+    position: relative;
+    left: -20px;
+    top: 30px; 
+}
+
+/* Position the <h1> element 50px from the left, and 100px from the top, relative to the HTML page. */
+h1 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+/* Position the <img> element behind the text. */
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+img {
+    z-index: -1;
+}
+
+/* Position the element with the "topleft" class 30px from the left, and 15px from the top, relative to its container. */
+.container {
+    position: relative;
+}
+
+.topleft {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+}

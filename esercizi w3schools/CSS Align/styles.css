@@ -1,0 +1,21 @@
+div {
+    width: 300px;
+    background-color: #b0e0e6;
+}
+
+/* Center align the <div> element using margins. */
+div {
+    margin: 0 auto;
+}
+
+/*soluzione del sito */
+div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Position the <div> element all the way to the right using absolute positioning. */
+div {
+    position: absolute;
+    right: 0;
+}

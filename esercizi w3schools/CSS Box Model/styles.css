@@ -1,0 +1,23 @@
+div {
+    background-color: lightblue;
+}
+
+/* Set the width of the div to "200px". */
+div {
+    width: 200px;
+}
+
+/* Set the padding of the div to "25px". */
+div {
+    padding: 25px;
+}
+
+/* Set the border of the div to "25px solid navy". */
+div {
+    border: 25px solid navy;
+}
+
+/* Set the margin of the div to "25px". */
+div {
+    margin: 25px;
+}

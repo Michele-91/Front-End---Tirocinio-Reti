@@ -1,0 +1,21 @@
+p {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+
+/* Specify that the overflowed content for the <p> element should be signaled with an ellipsis (...) */
+p {
+    text-overflow: ellipsis;
+}
+
+/* Specify that text in the <p> element should wrap, even if it needs to split in the middle of a word. */
+p {
+    word-wrap: break-word;
+}
+
+/* Specify that text in the <p> element can break between any two letters. */
+p {
+    word-break: break-all;
+}

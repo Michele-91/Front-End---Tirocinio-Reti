@@ -1,0 +1,25 @@
+/* Set the background color for visited and unvisited links to "lightblue", and the background color for the hover and active link states to "yellow". */
+a:link,
+a:visited {
+    background-color: lightblue;
+}
+
+a:hover,
+a:active {
+    background-color: yellow;
+}
+
+/* Change the background color, when a user hovers over p elements, with the class "highlight", to "lightblue". */
+p.lightblue:hover {
+    background-color: lightblue;
+}
+
+/* Set the background color of <p> elements, that are the first child of any element, to "lightblue". */
+p:first-child {
+    color: lightblue;
+}
+
+/* Set the background color of <input> elements that are in focus (clicked or active), to "lightblue". */
+input:focus {
+    background-color: lightblue;
+}

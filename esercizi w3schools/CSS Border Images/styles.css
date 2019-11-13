@@ -1,0 +1,11 @@
+/* Give the <div> element an image border using the image "border.png". Slice the image at 30px and repeat it. */
+div {
+    border: 10px solid transparent;
+    border-image: url('border.png') 30 round;
+}
+
+/* Give the <div> element an image border using the image "border.png". Slice the image at 30px and stretch it. */
+div {
+    border: 10px solid transparent;
+    border-image: url('border.png') 30 stretch;
+}

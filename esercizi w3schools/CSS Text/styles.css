@@ -1,0 +1,32 @@
+/* Set the text color for the page to "red", and the text color for <h1> to "blue". */
+body {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+/* Center align the <h1> element. */
+h1 {
+    text-align: center;
+}
+
+/* Remove the underline from the link. */
+a {
+    text-decoration: none;
+}
+
+/* Style text in <h1> to uppercase letters, and text in <p> to capitalized letters. */
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-transform: capitalize;
+}
+
+/* Indent the first line of the <p> element with 20px. */
+p {
+    text-indent: 20px;
+}

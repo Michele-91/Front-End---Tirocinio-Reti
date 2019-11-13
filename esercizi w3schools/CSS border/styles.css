@@ -1,0 +1,29 @@
+/*  Set a "4px", "dotted" border for <p>.
+ */
+
+ p {
+     border-style: dotted;
+     border-width: 4px;
+ }
+
+ /* Set the border color for <p> to "red".
+ */
+
+ p {
+     border-color: red;
+ }
+
+ /* Change the 3 border properties, so that they only show the border on the top side.
+ */
+
+ p {
+     border-top-style: dotted;
+     border-top-width: 4px;
+     border-top-color: red;
+ }
+
+ /* With the border property: Set the border for p to "10px", "solid" and "green".
+ */
+ p {
+     border: 10px solid green;
+ }

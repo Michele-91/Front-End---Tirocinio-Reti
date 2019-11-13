@@ -1,0 +1,29 @@
+/* Set the background-color to "lightblue" for elements with a "target" attribute. */
+a[target] {
+    background-color: lightblue;
+}
+
+/* Set the background-color to "lightblue" for elements with an attribute like: target="_blank" */
+a[target="_blank"] {
+    background-color: lightblue;
+}
+
+/* Set a border with the color "red", around elements with a "title" attribute containing the word "red". */
+img[title~="red"] {
+    border-color: red;
+}
+
+/* Set a border with the color "red", around elements with a "title" attribute starting with "red". */
+img[title^="red"] {
+    border-color: red;
+}
+
+/* Set a border with the color "red", around elements with a "title" attribute ending with the word "flower" (not flowers). */
+img[title$="flower"] {
+    border-color: red;
+}
+
+/* Set a border with the color "red", around elements with a "title" attribute containing the value "flow". */
+img[title*="flow"] {
+    border-color: red;
+}

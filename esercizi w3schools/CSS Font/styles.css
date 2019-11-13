@@ -1,0 +1,32 @@
+/* Set the font family for the page to "Courier New", and the font family for <h1> to "Verdana".*/
+body {
+    font-family: 'Courier New';
+}
+
+h1 {
+    font-family: Verdana;
+}
+
+/* Show <p> elements as "italic" text. */
+p {
+    font-style: italic;
+}
+
+/* Set the font size for the page to "20px", and the font size for <h1> to "3em". */
+body {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/* Show <p> elements as "bold" text. */
+p {
+    font-weight: bold;
+}
+
+/* With the font property: Set the <p> to "italic", "20px" and "Verdana". */
+p {
+    font: 20px italic Verdana;
+}

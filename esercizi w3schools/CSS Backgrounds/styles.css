@@ -1,0 +1,29 @@
+
+body {
+    background-image: url(paper.gif);
+}
+
+/* Add a second background image ("img_flwr.gif") to the <body> element. Make sure that "img_flwr.gif" is displayed on top of the current background image. */
+body {
+    background-image: url(img_flur.gif), url(paper.gif);
+}
+
+/* Change the size of the background image to: width 100px, height 80px. */
+body {
+    background-size: 100px 80px;
+}
+
+/* Change the size of the background image so it always fits the entire page. */
+body {
+    background-size: cover;
+}
+
+/* Specify that the background image position should start from the upper left corner of the content-box. */
+body {
+    background-origin: content-box;
+}
+
+/* Specify that the "painting area" of the background should be to the outside edge of the padding. */
+body {
+    background-clip: padding-box;
+}

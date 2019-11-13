@@ -1,0 +1,20 @@
+
+/* Hide the <h1> element. It should still take up the same space as before. */
+h1 {
+    visibility: hidden;
+}
+
+/* Hide the <h1> element. It should not take up any space. */
+h1 {
+    display: none;
+}
+
+/* Display the list items as inline elements. */
+li {
+    display: inline;
+}
+
+/* Display the <strong> elements as block elements. */
+strong {
+    display: block;
+}

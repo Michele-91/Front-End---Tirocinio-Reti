@@ -1,0 +1,76 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+/* Add a 2 second animation for the <div> element, which changes the color from red to blue. Call the animation "example" */
+@keyframes example {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+
+div {
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+/* Add the following 5 steps to the animation "example" (using 0%, 25%, 50%, 75%, and 100%):
+
+0% - Set background color to "red", left position to "0px", top position to: "0px"
+25% - Set background color to "blue", left position to "0px", top position to: "200px"
+50% - Set background color to "green", left position to "200px", top position to: "200px"
+75% - Set background color to "yellow", left position to "200px", top position to: "0px"
+100% - Set background color to "red", left position to "0px", top position to: "0px" */
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px
+    }
+    25% {
+        background-color: blue;
+        left: 0px;
+        top: 200px;
+    }
+    50% {
+        background-color: green;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* Specify that the animation of the <div> element should have a "1" second delay before starting. */
+div {
+    animation-delay: 1s;
+}
+
+/* Specify that the animation of the <div> element should continue to loop for ever. */
+div {
+    animation-iteration-count: infinite;
+}
+
+/* Specify that the animation of the <div> element should alternate between running forwards and backwards. */
+div {
+    animation-direction: alternate;
+}
+
+/* Specify that the animation of the <div> element should have a "ease-in-out" speed curve. */
+div {
+    animation-timing-function: ease-out;
+}

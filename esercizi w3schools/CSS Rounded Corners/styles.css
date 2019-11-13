@@ -1,0 +1,15 @@
+div {
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;  
+  }
+
+  /* Give the <div> element rounded corners (use the shorthand property and the value "25px"). */
+  div {
+      border-radius: 25px;
+  }
+
+  /* Give the <div> element a rounded corner (25px radius) on the bottom left side. */
+  div {
+      border-bottom-left-radius: 25px;
+  }

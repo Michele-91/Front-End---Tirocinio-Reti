@@ -1,0 +1,14 @@
+h1 {
+    background-color: lightblue;
+}
+
+
+/* Set the height of <h1> to "100px". */
+h1 {
+    height: 100px;
+}
+
+/* Set the width of <h1> to "50%". */
+h1 {
+    width: 50%;
+}
