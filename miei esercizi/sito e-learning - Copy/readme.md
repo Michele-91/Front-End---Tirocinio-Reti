@@ -5,4 +5,4 @@ Di seguito altre funzionalità CSS di cui ho potuto fare pratica
 con questo esercizio:
 - flexbox
 - object-fit
-- git branching
+- git branching e merging
