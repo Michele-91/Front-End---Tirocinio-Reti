@@ -19,15 +19,16 @@ html {
     /* min-height: 100%; */
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(4, auto-fill);
+    grid-template-columns: [body-start] 1fr 1fr 1fr 1fr [body-end];
     grid-auto-flow: row;
     /* grid-template-rows: 1fr 1fr 1fr; */
 
 }
 
 header {
+    grid-column: body-start / body-end;
     display: grid;
-    grid-template-rows: 75% 25%;
+    grid-template-rows: 85% 15%;
     align-content: end;
 }
 
