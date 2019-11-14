@@ -1,0 +1,56 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+    /* height: 100%; */
+}
+
+.container {
+    background-color: coral;
+    margin: 0 auto;
+    width: 80%;
+    /* min-height: 100%; */
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, auto-fill);
+    grid-auto-flow: row;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+
+}
+
+header {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    align-content: end;
+}
+
+.front-image {
+    background-color: cornflowerblue;
+}
+
+.header-pic {
+    width: 100%;
+    object-fit: contain;
+}
+
+nav {
+    background-color: crimson;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__item {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    /* height: 50%; */
+}

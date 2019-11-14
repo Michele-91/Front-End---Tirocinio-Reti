@@ -1,0 +1,71 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.container {
+    background-color: coral;
+    margin: 0 auto;
+    width: 80%;
+    /* min-height: 100%; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.front-image {
+    background-color: cornflowerblue;
+    height: 70%;
+}
+
+.header-pic {
+    width: 100%;
+    object-fit: contain;
+}
+
+nav {
+    background-color: crimson;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.nav__item {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    /* height: 50%; */
+}
+
+
+@media screen and (max-width: 700px) {
+
+    nav {
+        height: 20%;
+    }
+
+    nav div {
+        flex-direction: column;
+    }
+}
