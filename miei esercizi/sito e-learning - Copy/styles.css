@@ -71,22 +71,35 @@ header {
 nav {
     background-color: crimson;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .nav__item {
+    position: relative;
     text-decoration: none;
-    padding: 0.3rem;
+    width: 23%;
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    background-color: crimson;
     cursor: pointer;
     color: rgb(255, 255, 255);
     font-size: 1.7rem;
-    transition: padding 0.5s ease-in, font-size 1s;
+    border-radius: .3rem;
+    transition: padding 0.5s ease-in;
 }
 
+
 .nav__item:hover {
-    box-shadow: 0 0.2rem 0 white;
+    background-color: whitesmoke;
+    color: black;
+    transition: background-color .8s ease-out;
 }
+
+
 
 @media screen and (max-width: 800px) {
     .container {
@@ -94,7 +107,7 @@ nav {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     nav {
         flex-direction: column;
         justify-content: space-around;
@@ -103,6 +116,7 @@ nav {
     
     .nav__item {
         padding: 1rem 0;
+        width: 100%;
         font-size: 1.5rem;
     }
 }

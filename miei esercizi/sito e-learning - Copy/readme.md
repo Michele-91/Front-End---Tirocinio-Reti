@@ -16,3 +16,4 @@ con questo esercizio:
   in due div anch'essi con proprietà "display: flex". Ho poi deciso invece di utilizzare le funzionalità
   della griglia, e aggiungere la proprietà "minmax(auto, 1fr)" per la barra all'interno della griglia 
   dell'header, così da poter semplificare sia struttura che stili.
+- :hover
