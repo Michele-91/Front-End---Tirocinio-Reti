@@ -77,11 +77,15 @@ nav {
 
 .nav__item {
     text-decoration: none;
+    padding: 0.3rem;
     cursor: pointer;
     color: rgb(255, 255, 255);
     font-size: 1.7rem;
-    /* height: 50%; */
-    /* transition: padding 0.5s ease-in, font-size 1s; */
+    transition: padding 0.5s ease-in, font-size 1s;
+}
+
+.nav__item:hover {
+    box-shadow: 0 0.2rem 0 white;
 }
 
 @media screen and (max-width: 800px) {
