@@ -20,14 +20,27 @@
             <img class="header-pic" src="img/office.jpg.jpg" alt="frontpage-office-img">
         </div>
         <nav>
-            <a href="" class="nav__item nav__item1"><span>Home</span></a>
-            <a href="" class="nav__item nav__item2"><span>Chi siamo</span></a>
-            <a href="" class="nav__item nav__item3"><span>Team</span></a>
-            <a href="" class="nav__item nav__item4"><span>Contattaci</span></a>
+            <a href="home" class="nav__item nav__item1"><span>Home</span></a>
+            <a href="#chisiamo" class="nav__item nav__item2"><span>Chi siamo</span></a>
+            <a href="#team" class="nav__item nav__item3"><span>Team</span></a>
+            <a href="#contattaci" class="nav__item nav__item4"><span>Contattaci</span></a>
         </nav>
     </header>
     <main class="content">
-        <section class="team">
+        <section class="chisiamo" id="chisiamo">
+            <div class="chisiamo__immagine">
+                <img src="https://picsum.photos/500/300" class="" alt="random-pic">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur id velit quae temporibus iste,
+                consequuntur rerum reiciendis perferendis ea in inventore nobis cupiditate ipsum culpa pariatur
+                praesentium, dicta ipsam excepturi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                eius quasi voluptatem consectetur quaerat recusandae, soluta atque iste dicta magni, dolorum et
+                exercitationem corporis corrupti, aut voluptate a illum aspernatur? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Doloremque nobis non magni dignissimos. Sint dolor inventore eaque
+                voluptatum exercitationem enim commodi. Consectetur saepe eligendi, deleniti quod laboriosam aliquid
+                nobis velit!</p>
+        </section>
+        <section class="team" id="team">
             <article class="para">
                 <img src="https://picsum.photos/100" class="para__immagine para__immagine1" alt="random-pic">
                 <p class="para__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nesciunt
@@ -71,9 +84,6 @@
                     quis nam mollitia!</p>
             </article>
         </section>
-        <section class="chisiamo">
-
-        </section>
         <section class="contattaci" id="contattaci">
             <form class="form" action="" method="post">
                 <label for="nome">Nome:</label>
@@ -81,7 +91,8 @@
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" required>
                 <label for="messaggio">Messaggio:</label>
-                <input type="text" name="messaggio" id="messaggio" required>
+                <!-- <input type="text" name="messaggio" id="messaggio" required> -->
+                <textarea name="messaggio" id="messaggio" cols="30" rows="10"></textarea>
                 <label for="submit">Submit</label>
                 <input type="submit" name="submit" id="submit">
             </form>

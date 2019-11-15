@@ -13,6 +13,7 @@ con questo esercizio:
 - transition
 - :hover
 - float
+- scroll-behavior
 
 Riflessioni: 
 
