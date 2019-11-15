@@ -13,7 +13,9 @@ con questo esercizio:
 - difficoltà nel resizing delle icone social, risolto impostando una percentuale come dimensione
   invece di usare rem
 - avevo inizialmente intenzione di utilizzare la flexbox per rendere il menu responsive, dividendolo
-  in due div anch'essi con proprietà "display: flex". Ho poi deciso invece di utilizzare le funzionalità
-  della griglia, e aggiungere la proprietà "minmax(auto, 1fr)" per la barra all'interno della griglia 
+  in due div anch'essi con proprietà "display: flex". Ho poi deciso invece di utilizzare le funzionalità della griglia, e aggiungere la proprietà "minmax(auto, 1fr)" per la barra all'interno della griglia 
   dell'header, così da poter semplificare sia struttura che stili.
 - :hover
+- float
+- ho reso il contenuto principale responsive, il numero di colonne e la loro ampiezza è già
+  impostato all'interno della griglia CSS di .team, senza l'utilizzo di media queries
