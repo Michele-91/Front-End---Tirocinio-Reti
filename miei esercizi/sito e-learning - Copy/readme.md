@@ -14,6 +14,9 @@ con questo esercizio:
 - :hover
 - float
 - scroll-behavior
+- border-radius
+- shape-outside
+- opacity
 
 Riflessioni: 
 

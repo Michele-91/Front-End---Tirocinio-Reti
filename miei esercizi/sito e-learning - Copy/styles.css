@@ -122,6 +122,15 @@ nav {
     margin-top: 6rem;
 }
 
+.team img {
+    border-radius: 50%;
+    shape-outside: circle(50%);
+}
+
+.team img:hover {
+    opacity: 0.5;
+}
+
 .chisiamo {
     grid-column: 1 / -1;
     width: 100%;
