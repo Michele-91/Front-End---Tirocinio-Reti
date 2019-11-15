@@ -16,20 +16,44 @@ html {
     background-color: coral;
     margin: 0 auto;
     width: 80%;
-    /* min-height: 100%; */
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 4rem;
     grid-template-columns: [body-start] 1fr 1fr 1fr 1fr [body-end];
+    grid-template-rows: auto;
     grid-auto-flow: row;
-    /* grid-template-rows: 1fr 1fr 1fr; */
-
 }
 
 header {
     grid-column: body-start / body-end;
     display: grid;
-    grid-template-rows: 85% 15%;
-    align-content: end;
+    grid-template-rows: 8% 80% 12%;
+    align-content: end; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons img {
+    height: 90%;
+}
+
+
+.social-icons img:hover {
+    cursor: pointer;
+    fill: white;
+    background-color: wheat;
+    transform: rotateY(180deg) rotateY(180deg);
+    transition: transform 1.5s;
+}
+
+.social-icons img:active {
+    background-color: rgb(214, 214, 54);
+}
+
+[alt="cart-icon"] {
+    margin-right: 2rem;
 }
 
 .front-image {
@@ -38,7 +62,8 @@ header {
 
 .header-pic {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 
 nav {
@@ -54,4 +79,10 @@ nav {
     color: rgb(255, 255, 255);
     font-size: 2rem;
     /* height: 50%; */
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
 }

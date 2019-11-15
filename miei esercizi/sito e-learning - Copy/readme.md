@@ -6,3 +6,10 @@ con questo esercizio:
 - flexbox
 - object-fit
 - git branching e merging
+- utilizzo icone
+- attribute selectors
+- transform
+- transition
+- difficoltà nel resizing delle icone social, risolto impostando una percentuale come dimensione
+  invece di usare rem
+  
