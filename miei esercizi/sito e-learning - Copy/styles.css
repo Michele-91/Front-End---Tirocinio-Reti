@@ -27,7 +27,7 @@ header {
     grid-column: body-start / body-end;
     display: grid;
     /* grid-template-rows: 8% 80% 12%; */
-    grid-template-rows: 8% minmax(75%, 80%) minmax(auto, 1fr);  
+    grid-template-rows: minmax(auto, 8%) minmax(auto, 80%) minmax(auto, 1fr);  
     align-content: end; 
 }
 
@@ -103,6 +103,7 @@ nav {
     grid-column: 1 / -1;
     display: grid;
     margin: 0 3rem;
+    grid-gap: 3rem;
     justify-content: center;
 }
 
@@ -117,6 +118,31 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* grid-auto-flow: dense; */
     grid-auto-columns: minmax(auto, 1fr);
+}
+
+.chisiamo {
+
+}
+
+.contattaci {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(25%, 50%);
+    justify-content: center;
+    /* justify-items: center; */
+}
+
+.contattaci form {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(2, 2rem) 8rem;
+    grid-auto-flow: row;
+    grid-gap: .2rem;
+}
+
+label {
+    align-self: center;
 }
 
 .para {
