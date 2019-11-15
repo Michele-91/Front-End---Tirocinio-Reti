@@ -11,7 +11,7 @@ con questo esercizio:
 - attribute selectors
 - transform
 - transition
-- :hover
+- :hover, :active
 - float
 - scroll-behavior
 - border-radius
