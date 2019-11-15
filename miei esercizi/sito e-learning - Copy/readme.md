@@ -17,6 +17,7 @@ con questo esercizio:
 - border-radius
 - shape-outside
 - opacity
+- git tag
 
 Riflessioni: 
 
