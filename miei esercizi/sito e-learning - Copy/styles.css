@@ -26,7 +26,8 @@ html {
 header {
     grid-column: body-start / body-end;
     display: grid;
-    grid-template-rows: 8% 80% 12%;
+    /* grid-template-rows: 8% 80% 12%; */
+    grid-template-rows: 8% minmax(75%, 80%) minmax(auto, 1fr);  
     align-content: end; 
 }
 
@@ -53,8 +54,9 @@ header {
 }
 
 [alt="cart-icon"] {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
+
 
 .front-image {
     background-color: cornflowerblue;
@@ -77,12 +79,26 @@ nav {
     text-decoration: none;
     cursor: pointer;
     color: rgb(255, 255, 255);
-    font-size: 2rem;
+    font-size: 1.7rem;
     /* height: 50%; */
+    /* transition: padding 0.5s ease-in, font-size 1s; */
 }
 
 @media screen and (max-width: 800px) {
     .container {
         width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: space-around;
+    }
+    
+    .nav__item {
+        padding: 1rem 0;
+        font-size: 1.5rem;
     }
 }
