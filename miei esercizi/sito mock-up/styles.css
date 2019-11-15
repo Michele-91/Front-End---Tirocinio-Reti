@@ -1,0 +1,237 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+    /* height: 100%; */
+}
+
+.container {
+    background-color: coral;
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: [body-start] repeat(4, 1fr) [body-end];
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+
+header {
+    grid-column: body-start / body-end;
+    display: grid;
+    /* grid-template-rows: 8% 80% 12%; */
+    grid-template-rows: minmax(auto, 8%) minmax(auto, 80%) minmax(auto, 1fr);  
+    align-content: end; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons img {
+    height: 90%;
+}
+
+
+.social-icons img:hover {
+    cursor: pointer;
+    background-color: wheat;
+    transform: rotateY(180deg) rotateY(180deg);
+    transition: transform 1.5s;
+}
+
+.social-icons img:active {
+    background-color: rgb(214, 214, 54);
+}
+
+[alt="cart-icon"] {
+    margin-right: 1.5rem;
+}
+
+
+.front-image {
+    background-color: cornflowerblue;
+}
+
+.header-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background-size: cover; */
+}
+
+nav {
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav__item {
+    position: relative;
+    text-decoration: none;
+    width: 23%;
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    background-color: crimson;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    border-radius: .3rem;
+    transition: padding 0.5s ease-in-out;
+}
+
+
+.nav__item:hover {
+    background-color: whitesmoke;
+    color: black;
+    transition: background-color .8s ease-out;
+}
+
+.content {
+    grid-column: 1 / -1;
+    display: grid;
+    margin: 0 3rem;
+    grid-gap: 3rem;
+    justify-content: center;
+}
+
+.team {
+    grid-column: 1 / -1;
+    /* margin: 0 3rem; */
+    width: 100%;
+
+    display: grid;
+    justify-content: center;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-auto-flow: dense; */
+    grid-auto-columns: minmax(auto, 1fr);
+    margin-top: 6rem;
+}
+
+.team img {
+    border-radius: 50%;
+    shape-outside: circle(50%);
+}
+
+.team img:hover {
+    opacity: 0.5;
+}
+
+.chisiamo {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: minmax(auto, 1fr), minmax(auto, 25%);
+    grid-gap: 2rem;
+    margin-top: 6rem;
+}
+
+.chisiamo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.chisiamo p {
+    text-align: justify;
+}
+
+.contattaci {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(auto, 50%);
+    justify-content: center;
+    margin-top: 6rem;
+    /* justify-items: center; */
+}
+
+.contattaci form {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(2, 2rem) 8rem 1.5rem;
+    justify-content: left;
+    grid-auto-flow: row;
+    grid-gap: .5rem;
+}
+
+label {
+    align-self: center;
+}
+
+
+
+.para {
+    border: 1px solid black;
+}
+
+.para__immagine {
+    padding: 1rem;
+    float: left;
+}
+
+.para__immagine--4 {
+    padding: 1rem;
+    float: right;
+}
+
+
+.para__text {
+    text-align: justify;
+    padding: 1rem;
+}
+
+footer {
+    background-color: rgb(87, 85, 85);
+    color: white;
+    grid-column: 1 / -1;
+    grid-row: span 2;
+    height: 6rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer p {
+    margin: .2rem 3rem;
+    text-align: center;
+    width: 250px;
+    padding: 0 2rem 1rem 0;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: space-around;
+    }
+    
+    .nav__item {
+        padding: 1rem 0;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
