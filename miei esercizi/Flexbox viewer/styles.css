@@ -74,7 +74,7 @@ body {
 
 
 .container {
-    margin: 5rem auto;
+    margin: 3rem auto;
     width: 70%;
     height: 60%;
     background-color: #537ec5;
@@ -85,11 +85,10 @@ body {
 }
 
 .item {
-    grid-row: 3 / -1;
     border: 2px solid rgb(245, 255, 103);
     background-color: #f39422;
     padding: 2rem;
-    margin: .5rem;
-    font-size: 3rem;
+    margin: 1rem;
+    font-size: 2rem;
     border-radius: 10px;
 }
