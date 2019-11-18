@@ -6,7 +6,7 @@ function convert(str) {
     for(let i = 0; i < str.length; i++) {
         str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
     }
-    return str;
+    return str.join(' ');
 }
 
 console.log(convert('tanto va la gatta al lardo che ci lascia lo zampino'));
