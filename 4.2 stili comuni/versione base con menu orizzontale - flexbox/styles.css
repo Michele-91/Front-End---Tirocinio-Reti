@@ -30,9 +30,7 @@ div > div > div {
 }
 
 /*li dispari*/
-a:nth-child(1),
-a:nth-child(3),
-a:nth-child(5) {
+a:nth-child(odd) {
     color: #4281f5;
 }
 
