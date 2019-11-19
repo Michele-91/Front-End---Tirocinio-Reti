@@ -5,11 +5,15 @@ function longest(str) {
     let longestWord = '';
     str = str.split(' ');
     for(let i = 0; i < str.length; i++) {
-        for(let j = 0; j < str[i].length; j++) {
-            if (j > count) {
-                count = j;
-                longestWord = str[i];
-            }
+        // for(let j = 0; j < str[i].length; j++) {
+        //     if (j > count) {
+        //         count = j;
+        //         longestWord = str[i];
+        //     }
+        // }
+        if (str[i].length > count) {
+            count = str[i].length;
+            longestWord = str[i]
         }
     }
     return longestWord;

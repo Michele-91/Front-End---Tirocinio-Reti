@@ -9,4 +9,4 @@ function convert(str) {
     return str.join(' ');
 }
 
-console.log(convert('tanto va la gatta al lardo che ci lascia lo zampino'));
+console.log(convert('tanto va la Gatta al lardo che ci lascia lo zampino'));

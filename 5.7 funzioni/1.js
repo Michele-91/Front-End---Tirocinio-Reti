@@ -1,6 +1,6 @@
 
 
-// Write a JavaScript function that reverse a number
+// Write a JavaScript function that reverses a number
 function reverse(num) {
     let remainder;
     let reversedNum = '';

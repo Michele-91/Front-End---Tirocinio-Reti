@@ -2,6 +2,7 @@
 
 function vowelNum(str) {
     let vowelCount = 0;
+    let consonantCount = 0;
     for(let i = 0; i < str.length; i++) {
         switch(str[i]) {
             case 'a': case 'A':
@@ -11,9 +12,9 @@ function vowelNum(str) {
             case 'u': case 'U':
             vowelCount = vowelCount + 1;
             break;
-            // default:
-            // console.log('se vedi questo messaggio si è verificato un errore inaspettato');   
-            // break;
+            default:
+            consonantCount++;  
+            break;
         }
     }
     return vowelCount;
