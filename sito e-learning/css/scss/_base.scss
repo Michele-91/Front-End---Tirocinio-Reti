@@ -40,17 +40,16 @@ header {
         align-items: center;
         text-align: center;
         list-style-type: none;
-
+        
         &__button {
             // margin-bottom: 40rem;
-
+            
             &-img {
-
+                
             }
         }
-
+        
         &__menu {
-            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -65,13 +64,14 @@ header {
 
             &__link {
                 display: flex;
-                flex-direction: column;
+                // flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                width: 100%;
                 text-align: center;
 
                 span {
-                    // width: 100%;
+                    width: 100%;
                     text-align: center;
                 }
             }
@@ -82,9 +82,6 @@ header {
 }
 
 .icon--menu {
-    align-self: center;
-    justify-self: center;
-    width: 50%;
-    height: 30px;
-    padding: 0;
+    width: 40%;
+    height: 4rem;
 }

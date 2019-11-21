@@ -46,7 +46,6 @@ header nav {
 }
 
 header nav__menu {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,31 +81,23 @@ header nav__menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   text-align: center;
 }
 
 header nav__menu__link span {
+  width: 100%;
   text-align: center;
 }
 
 .icon--menu {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  width: 50%;
-  height: 30px;
-  padding: 0;
+  width: 40%;
+  height: 4rem;
 }
 /*# sourceMappingURL=main.css.map */
