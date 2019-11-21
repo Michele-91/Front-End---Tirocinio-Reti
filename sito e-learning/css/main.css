@@ -5,7 +5,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-decoration: none;
 }
 
 html, body {
@@ -18,16 +17,15 @@ html, body {
   display: grid;
   -ms-grid-columns: 6% 1fr;
       grid-template-columns: 6% 1fr;
-  -ms-grid-rows: 1fr auto;
-      grid-template-rows: 1fr auto;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
-header {
+.container header {
   background-color: #3a8a22;
 }
 
-header nav {
-  width: 100%;
+.container header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +43,30 @@ header nav {
   list-style-type: none;
 }
 
-header nav__menu {
+.container header nav .nav__button {
+  width: 100%;
+  cursor: pointer;
+}
+
+.container header nav .nav__button div {
+  width: 100%;
+}
+
+.container header nav .nav__button div:hover {
+  background-color: #7fffd4;
+}
+
+.container header nav .nav__button div:active {
+  background-color: #00e598;
+}
+
+.container header nav .nav__button .icon--menu__menu {
+  width: 60%;
+  padding: .4rem;
+  border-radius: 30px;
+}
+
+.container header nav .nav__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +82,7 @@ header nav__menu {
           align-items: center;
 }
 
-header nav__menu__item {
+.container header nav .nav__menu .nav__menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,10 +98,14 @@ header nav__menu__item {
           align-items: center;
 }
 
-header nav__menu__link {
+.container header nav .nav__menu .nav__menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -89,15 +114,23 @@ header nav__menu__link {
           align-items: center;
   width: 100%;
   text-align: center;
+  text-decoration: none;
 }
 
-header nav__menu__link span {
+.container header nav .nav__menu .nav__menu__link span {
   width: 100%;
   text-align: center;
+  font-size: 1rem;
+  color: black;
+}
+
+.container header nav .nav__menu--animated {
+  display: none;
 }
 
 .icon--menu {
   width: 40%;
   height: 4rem;
+  fill: white;
 }
 /*# sourceMappingURL=main.css.map */
