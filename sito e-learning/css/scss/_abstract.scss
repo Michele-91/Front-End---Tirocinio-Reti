@@ -1,0 +1,20 @@
+
+@charset 'utf-8';
+
+$colors: (
+    primary: #bb3939,
+    primary-light: lighten(#bb3939, 40%),
+    primary-dark: darken(#bb3939, 40%),
+    secondary: #3a8a22
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+// h1 {
+//     @include desktop {
+        
+//     }
+// }
+
