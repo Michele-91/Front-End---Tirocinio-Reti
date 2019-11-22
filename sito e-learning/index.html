@@ -19,7 +19,7 @@
                 </svg>
             </div>
             <ul class="nav__menu nav__menu--animated">
-                
+
                 <li class="nav__menu__item">
                     <a href="" class="nav__menu__link" data-tool-tip="Home">
                         <svg class="icon--menu">
@@ -66,14 +66,30 @@
     <main>
         <!-- <section class="home"></section>
         <section class="about"></section> -->
-        <section class="blog">
-            <h1>
+        <!-- <section class="blog">
+            <h1 class="blog__title">
                 Recent updates
             </h1>
             <article class="view-article">
-                <h2>
-                    
-                </h2>
+                <h3 class="view-article__title">
+                    This is a blog title!
+                </h3>
+                <div class="view-article__image">
+                    <img src="http://unsplash.it/600/400" alt="">
+                </div>
+                <p class="view-article__content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure dolore veniam doloribus aut perspiciatis suscipit! Harum commodi minima nulla dolorum,
+                    quaerat eveniet alias sapiente repellendus quo. Dignissimos consequuntur odit quos.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quisquam quos ipsum rem dignissimos
+                    dicta adipisci voluptas itaque voluptatem fugit.
+                    Et vel aliquid consequatur iure ea error ratione maiores quo. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Dolorum laborum necessitatibus accusamus quaerat, ad nam, rerum
+                    perferendis perspiciatis quo animi nihil ipsum? Eveniet, voluptatem tempore unde nulla possimus
+                    eaque quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem fuga illum sint
+                    dignissimos id laboriosam fugiat voluptas nobis. Accusantium, non. Non doloremque error nihil cumque
+                    quisquam facere impedit, deleniti delectus.
+                </p>
             </article>
             <article class="calendar">
                 <h3>Latest Updates: </h3>
@@ -87,14 +103,42 @@
                 </ul>
             </article>
             <article class="credentials-area">
+                <form action="post">
+                    <label class="form-label" for="name">Enter your name: </label>
+                    <input class="form-input" type="text" name="name" id="name" required>
+                    <label class="form-label" for="email">Enter your Email: </label>
+                    <input class="form-input" type="email" name="email" id="email" required>
+                    <label class="form-label" for="passwordes">Inserisci una password:</label>
+                    <input class="form-input" type="password" id="passwordes" name="password" minlength="6" required>
+                    <label class="form-label" for="file">Carica foto: </label>
+                    <input class="form-input" type="file" id="file" name="file" accept="image/jpg">
+                    <label class="form-label" for="passwordes">Contenuto del post:</label>
+                    <textarea class="form-input" name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ducimus, reiciendis iste in repudiandae, enim iure nobis odit molestiae id, aperiam voluptatum tempore ex quod sunt aspernatur accusamus
+                         rem maiores alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum, labore laudantium illo, porro quo, 
+                         delectus repellat accusantium sed autem facere accusamus quidem eveniet quod? Quod, sit temporibus? Ullam, iste? Lorem ipsum dolor 
+                         sit amet consectetur adipisicing elit. Adipisci omnis nostrum enim culpa non, assumenda, quo soluta dolorum ratione animi odit earum saepe 
+                         deserunt tempore iure accusamus, natus id. Numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sequi dolores voluptates 
+                         voluptatum quod ex eum ut magnam praesentium error. Nulla, incidunt veritatis. Ab recusandae consequuntur eum, dolor dicta non.
+                    </textarea>
+                </form>
+            </article>
+        </section> -->
+        <section class="list">
+            <h1 class="list__title">
+                    Recent updates
+            </h1>
+            <article class="search-bar" id="search-bar">
 
             </article>
+            <article class="list__gallery">
+                
+            </article>
         </section>
-        <!-- <section class="list"></section>
-        <section class="contacts"></section> -->
+        <!-- <section class="contacts"></section> -->
     </main>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 
 

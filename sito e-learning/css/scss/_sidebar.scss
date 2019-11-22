@@ -36,6 +36,7 @@ header {
             @include responsive(tablet) {
                 margin: auto;
                 width: 80%;
+                height: 100%;
                 display: flex;
                 justify-content: flex-end;
             }
@@ -109,7 +110,7 @@ header {
                     white-space: nowrap;
                     transform: scale(0);
                     transform-origin: top center;
-                    z-index: -3;
+                    z-index: 5;
                     transform: translateX(-6rem);
                     opacity: 0.0;
                     transition: transform ease-out .1s;
