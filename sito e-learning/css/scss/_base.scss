@@ -25,95 +25,10 @@ html, body {
     grid-template-columns: 6% 1fr;
     grid-template-rows: 1fr;
 
-    header {
-
-        background-color: color(secondary);
-
-        nav {
-            // width: 100%;
-            // height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            text-align: center;
-            list-style-type: none;
-            
-            .nav__button {
-                width: 100%;
-                // height: 30%;
-                // margin-bottom: 40rem;
-                cursor: pointer;
-
-                div {
-                    width: 100%;
-
-                }
-                
-                div:hover {
-                    background-color: #7fffd4;
-
-                }
-
-                div:active {
-                    background-color: darken(#7fffd4, 30%);
-                }
-
-                .icon--menu__menu {
-                    width: 60%;
-                    padding: .4rem;
-                    border-radius: 30px;
-                }
-
-                .icon--menu__menu:hover {
-                }
-            }
-            
-            .nav__menu {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                // display: none;
-
-                .nav__menu__item {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .nav__menu__link {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    text-align: center;
-                    text-decoration: none;
-
-                    span {
-                        width: 100%;
-                        text-align: center;
-                        font-size: 1rem;
-                        color: black;
-                    }
-                }
-
-            }
-
-            .nav__menu--animated {
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
-                display: none;
-            }
-
-        }
+    @media all and (max-width: 600px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 9% 1fr;
     }
-
-
 }
     
 .icon--menu {

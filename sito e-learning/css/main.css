@@ -21,11 +21,26 @@ html, body {
       grid-template-rows: 1fr;
 }
 
-.container header {
+@media all and (max-width: 600px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 9% 1fr;
+        grid-template-rows: 9% 1fr;
+  }
+}
+
+.icon--menu {
+  width: 40%;
+  height: 4rem;
+  fill: white;
+}
+
+header {
   background-color: #3a8a22;
 }
 
-.container header nav {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,30 +58,30 @@ html, body {
   list-style-type: none;
 }
 
-.container header nav .nav__button {
+header nav .nav__button {
   width: 100%;
   cursor: pointer;
 }
 
-.container header nav .nav__button div {
+header nav .nav__button div {
   width: 100%;
 }
 
-.container header nav .nav__button div:hover {
+header nav .nav__button div:hover {
   background-color: #7fffd4;
 }
 
-.container header nav .nav__button div:active {
+header nav .nav__button div:active {
   background-color: #00e598;
 }
 
-.container header nav .nav__button .icon--menu__menu {
+header nav .nav__button .icon--menu__menu {
   width: 60%;
   padding: .4rem;
   border-radius: 30px;
 }
 
-.container header nav .nav__menu {
+header nav .nav__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +97,7 @@ html, body {
           align-items: center;
 }
 
-.container header nav .nav__menu .nav__menu__item {
+header nav .nav__menu .nav__menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,7 +113,8 @@ html, body {
           align-items: center;
 }
 
-.container header nav .nav__menu .nav__menu__link {
+header nav .nav__menu .nav__menu__link {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,24 +129,76 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 100%;
   text-align: center;
   text-decoration: none;
 }
 
-.container header nav .nav__menu .nav__menu__link span {
+header nav .nav__menu .nav__menu__link:hover {
+  background-color: wheat;
+}
+
+header nav .nav__menu .nav__menu__link::after {
+  content: attr(data-tool-tip);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: wheat;
+  width: 250%;
+  height: 50%;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  border-radius: 5px;
+  font-size: .75em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  white-space: nowrap;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  z-index: -3;
+  -webkit-transform: translateX(-6rem);
+          transform: translateX(-6rem);
+  opacity: 0.0;
+  -webkit-transition: -webkit-transform ease-out .1s;
+  transition: -webkit-transform ease-out .1s;
+  transition: transform ease-out .1s;
+  transition: transform ease-out .1s, -webkit-transform ease-out .1s;
+}
+
+header nav .nav__menu .nav__menu__link:hover::after {
+  z-index: -3;
+  opacity: 1;
+  -webkit-transform: scale(2) translateX(1.7rem);
+          transform: scale(2) translateX(1.7rem);
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+header nav .nav__menu .nav__menu__link span {
+  position: relative;
   width: 100%;
+  height: 100%;
+  display: none;
   text-align: center;
   font-size: 1rem;
   color: black;
 }
 
-.container header nav .nav__menu--animated {
-  display: none;
+header nav .nav__menu .nav__menu__link span:hover {
+  color: white;
 }
 
-.icon--menu {
-  width: 40%;
-  height: 4rem;
-  fill: white;
+header nav .nav__menu--animated {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
