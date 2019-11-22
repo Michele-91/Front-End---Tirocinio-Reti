@@ -18,3 +18,9 @@ $colors: (
 //     }
 // }
 
+@mixin responsive($breakpoint) {
+    @if($breakpoint == 'tablet') {
+        @media (max-width: 600px) {@content};
+    }
+}
+

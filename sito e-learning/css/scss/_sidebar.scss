@@ -5,52 +5,66 @@ header {
 
     nav {
         // width: 100%;
-        // height: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         text-align: center;
         list-style-type: none;
-        
-        .nav__button {
-            width: 100%;
-            cursor: pointer;
 
-            div {
-                width: 100%;
-
-            }
-            
-            div:hover {
+        &:hover {
+            @include responsive(tablet) {
                 background-color: #7fffd4;
+            }
+        }
+        &:active {
+            @include responsive(tablet) {
+                background-color: darken(#7fffd4, 30%);
+            }
+        }
 
+
+        .nav__button {
+            // height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            
+            @include responsive(tablet) {
+                margin: auto;
+                width: 80%;
+                display: flex;
+                justify-content: flex-end;
             }
 
-            div:active {
+            &:hover {
+                background-color: #7fffd4;
+            }
+            &:active {
                 background-color: darken(#7fffd4, 30%);
             }
 
-            .icon--menu__menu {
-                width: 60%;
-                padding: .4rem;
-                border-radius: 30px;
-            }
-
         }
-        
+
         .nav__menu {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             // display: none;
-            
+
             .nav__menu__item {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                @include responsive(tablet) {
+
+                }
 
             }
 
@@ -65,18 +79,24 @@ header {
                 text-align: center;
                 text-decoration: none;
 
+                @include responsive(tablet) {
+                    width: 200%;
+                    padding: 1rem;
+                }
+
                 &:hover {
                     background-color: wheat;
                 }
 
+
                 &::after {
+                    font-family: 'Poppins', sans-serif;
                     content: attr(data-tool-tip);
                     display: flex;
                     position: absolute;
                     background-color: wheat;
                     width: 250%;
                     height: 50%;
-                    font-family: 'Poppins', sans-serif;
                     // padding: 1em 3em;
                     color: black;
                     border-radius: 5px;
@@ -94,20 +114,27 @@ header {
                     opacity: 0.0;
                     transition: transform ease-out .1s;
 
-                    @media all and (max-width: 1000px) {
-
+                    @include responsive(tablet) {
+                        flex-direction: column;
+                        z-index: 5;
+                        background-color: transparent;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 4rem;
                     }
                 }
 
                 &:hover::after {
-                    z-index: -3;
                     opacity: 1;
                     transform: scale(2) translateX(1.7rem);
                     transition: all .1s;
-                }
 
-                &:active::after {
+                    @include responsive(tablet) {
+                        // z-index: -3;
+                        transform: rotateY(180deg) rotateY(180deg);
+                        background-color: wheat;
 
+                    }
                 }
 
                 // &[data-tool-tip] {
@@ -115,7 +142,7 @@ header {
 
                 // }
 
-                // &[data-tool-tip]::after {   
+                // &[data-tool-tip]::after {
                 //     content: attr(data-tool-tip);
                 //     display: block;
                 //     position: absolute;
@@ -128,7 +155,7 @@ header {
                 //     left: 0;
                 //     white-space: nowrap;
                 //     transform: scale(0);
-                //     transition: transform ease-out 300ms, 
+                //     transition: transform ease-out 300ms,
                 //                 bottom ease-out 300ms;
                 // }
 
@@ -136,7 +163,7 @@ header {
                 //     transform: scale(1);
                 //     bottom: 100%;
                 // }
-                
+
 
                 span {
                     position: relative;
@@ -147,10 +174,35 @@ header {
                     text-align: center;
                     font-size: 1rem;
                     color: black;
-                    
-                    &:hover {
-                        color: white;
-                    }
+
+                    // &::after {
+                    //     font-family: 'Poppins', sans-serif;
+                    //     content: attr(data-tool-tip);
+                    //     display: flex;
+                    //     position: absolute;
+                    //     background-color: wheat;
+                    //     width: 250%;
+                    //     height: 50%;
+                    //     // padding: 1em 3em;
+                    //     color: black;
+                    //     border-radius: 5px;
+                    //     font-size: .75em;
+                    //     justify-content: center;
+                    //     align-items: center;
+                    //     top: 0;
+                    //     left: 0;
+                    //     bottom: 0;
+                    //     white-space: nowrap;
+                    //     transform: scale(0);
+                    //     transform-origin: top center;
+                    //     z-index: -3;
+                    //     transform: translateX(-6rem);
+                    //     opacity: 0.0;
+                    //     transition: transform ease-out .1s;
+
+                    // }
+
+
 
                 }
 
@@ -159,7 +211,7 @@ header {
                 //     content: '';
                 //     position: absolute;
                 //     top: 0;
-                //     left: 0;                   
+                //     left: 0;
                 //     width: 100%;
                 //     height: 100%;
                 //     z-index: 10;
@@ -173,7 +225,7 @@ header {
                 //     transform: scaleX(4rem);
                 //     background-color: yellow;
                 // }
-                
+
             }
 
         }
@@ -190,3 +242,20 @@ header {
 
     }
 }
+
+.icon--menu {
+    width: 40%;
+    height: 4rem;
+    fill: white;
+
+    &:hover {
+        @include responsive(tablet) {
+            opacity: 0;
+        }
+    }
+}
+// .icon--menu:visited {
+//     @include responsive(tablet) {
+//         opacity: 1;
+//     }
+// }
