@@ -547,14 +547,12 @@ header nav .nav__menu--animated {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  grid-auto-flow: dense;
   place-items: left center;
   grid-gap: 2rem;
   list-style-type: none;
 }
 
 .list .list__gallery .gallery-item {
-  position: relative;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,11 +561,11 @@ header nav .nav__menu--animated {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   border: 2px solid black;
   -webkit-box-shadow: 8px 8px 2px 0px #a1a1a1;
           box-shadow: 8px 8px 2px 0px #a1a1a1;
@@ -582,11 +580,12 @@ header nav .nav__menu--animated {
 .list .list__gallery .gallery-item div img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .list .list__gallery .gallery-item p {
+  text-align: center;
   margin: 1.5rem 0;
   font-size: 2.5rem;
 }
