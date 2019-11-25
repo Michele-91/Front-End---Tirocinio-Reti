@@ -1,16 +1,23 @@
 
 // @charset 'utf-8';
 
-$colors: (
-    primary: #bb3939,
-    primary-light: lighten(#bb3939, 40%),
-    primary-dark: darken(#bb3939, 40%),
-    secondary: #3a8a22
-);
+// $colors: (
+//     primary: #bb3939,
+//     primary-light: lighten(#bb3939, 40%),
+//     primary-dark: darken(#bb3939, 40%),
+//     secondary: #3a8a22
+// );
 
-@function color($color-name) {
-    @return map-get($colors, $color-name);
-}
+$color-primary-dark: #A593E0;
+$color-primary-light: #E0E3DA;
+$color-secondary-light: #FFFFF3;
+$color-secondary-dark: #566270;
+$color-highlight: #F6B352;
+
+
+// @function color($color-name) {
+//     @return map-get($colors, $color-name);
+// }
 
 // h1 {
 //     @include desktop {
