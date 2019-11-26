@@ -28,11 +28,16 @@ const observer = new IntersectionObserver(function(entries, observer) {
         if(!entry.isIntersecting) {
             return;
         }
-        console.log(entry.target);
+        // switch(entry.classList.contains()) {
+
+        // }
+        
+        // console.log(entry.target);
+        // observer.unobserve(entry.target);
     })
 }, options);
 
-// observer.observe(listTitle);
-observerArr.forEach(el => {
-    observer.observe(el);
-})
+observer.observe(listTitle);
+// observerArr.forEach(el => {
+//     observer.observe(el);
+// })

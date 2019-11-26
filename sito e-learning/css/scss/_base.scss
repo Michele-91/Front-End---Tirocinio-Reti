@@ -9,6 +9,7 @@
 
 html, body {
     height: 100%;
+    overflow: auto;
 }
 
 
@@ -27,18 +28,22 @@ html, body {
     height: 100%;
     display: grid;
     grid-template-columns: 6% 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 
     @include responsive(tablet) {
         grid-template-columns: 1fr;
-        grid-template-rows: 4rem 1fr 1fr;
+        grid-template-rows: 4rem 1fr;
     }
 }
 
 main {
     display: grid;
+    // height: 2000rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    // background-color: aquamarine;
+    align-content: stretch;
+    align-items: center;
+    grid-template-rows: auto;
     grid-auto-flow: row;
 
     // & > * {
