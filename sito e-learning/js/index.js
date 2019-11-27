@@ -2,9 +2,12 @@
 
 let menuDisplay = document.querySelector('.nav__menu');
 let menuButton = document.querySelector('.nav__button');
-let blogTitle = document.querySelector('.blog__title');
-let listTitle = document.querySelector('.list__title');
-let observerArr = [blogTitle, listTitle];
+// let blogTitle = document.querySelector('.blog__title');
+// let listTitle = document.querySelector('.list__title');
+let home = document.querySelector('#home');
+let esplora = document.querySelector('#list');
+let blog = document.querySelector('#blog');
+let observerArr = [home, esplora, blog];
 
 menuButton.addEventListener('click', (e) => {
     menuDisplay.classList.toggle('nav__menu--animated');
@@ -17,27 +20,33 @@ menuButton.addEventListener('click', (e) => {
     // }
 });
 
+// document.addEventListener('load', function () {
+
+// });
 const options = {
     root: null,
     threshold: 0,
-    // rootMargin: "-150px 0px -200px 0px"
+    rootMargin: "-150px 0px -200px 0px"
 };
 
-const observer = new IntersectionObserver(function(entries, observer) {
+
+let observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
-        if(!entry.isIntersecting) {
-            return;
-        }
-        // switch(entry.classList.contains()) {
+        // if(!entry.isIntersecting) {
+        //     return;
+        // }
+        // if(entry.classList.contains()) {
 
         // }
-        
-        // console.log(entry.target);
+
+        console.log(entry.target);
         // observer.unobserve(entry.target);
     })
 }, options);
+// observer.observe(esplora);
 
-observer.observe(listTitle);
-// observerArr.forEach(el => {
-//     observer.observe(el);
-// })
+
+
+observerArr.forEach(el => {
+    observer.observe(el);
+})

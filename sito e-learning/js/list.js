@@ -1,16 +1,118 @@
 
 
 let list = {
-    javascript: {name: "javascript", description: "This is a javascript course"},
-    react: {name: "react", description: "This is a React course"},
-    css: {name: "CSS", description: "This is a CSS course"},
-    typescript: {name: "typescript", description: "This is a Typescript course"},
-    angular: {name: "angular", description: "This is a Angular course"},
-    html: {name: "html", description: "This is a HTML course"}
+    javascript: {
+        name: "javascript", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    react: {
+        name: "react", 
+        description: "This is a React course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    }, 
+    css: {
+        name: "CSS", 
+        description: "This is a css course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    typescript: {
+        name: "typescript", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    angular: {
+        name: "angular", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    html: {
+        name: "html", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    html: {
+        name: "html", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    html: {
+        name: "html", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    html: {
+        name: "html", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    html: {
+        name: "html", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    html: {
+        name: "html", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    },
+    html: {
+        name: "html", 
+        description: "This is a javascript course",
+        amount: 0,
+        added: 0,
+        edited: 0,
+        stars: 0,
+        students: 0
+    }
 }
 
 // oggetto che funge da aiuto per controllare che un elemento della lista sià già stato visualizzato
-// in seguito all'analisi di un input oppure no
+// oppure no in seguito all'analisi di un input
 let presentCheck =  {};
 
 // selezione <ul> che contiene gli elementi della lista nella pagina HTML
@@ -60,7 +162,7 @@ let removeNewElement = function (text, reg) {
     }
 }
 
-// - iterazione attraverso chiave dell'oggetto
+// - iterazione attraverso chiavi dell'oggetto
 // - se chiave corrisponde a input e lunghezza dell'input maggiore di zero, chiamata della funzione addNewElement che
 //   aggiunge elementi corrispondenti all'input
 // - alternativamente, chiamata della funzione che rimuove elementi corrispondenti all'input
@@ -79,9 +181,7 @@ let iterate = function(regEx, len) {
 
 // rispondi a nuovo input
 inputFilter.addEventListener('input', function (e) {
-
     let regEx = new RegExp(`${e.target.value}`, 'iu');
-
     iterate(regEx, e.target.value.length);
 
 });
