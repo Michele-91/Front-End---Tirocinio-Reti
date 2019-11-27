@@ -35,10 +35,7 @@ let observer = new IntersectionObserver(function (entries, observer) {
         // if(!entry.isIntersecting) {
         //     return;
         // }
-        // if(entry.classList.contains()) {
-
-        // }
-
+        
         console.log(entry.target);
         // observer.unobserve(entry.target);
     })
