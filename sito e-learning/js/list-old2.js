@@ -231,9 +231,6 @@ inputFilter.addEventListener('input', function (e) {
     //         console.log(name, e.target.value);
     //     }
     // }
-    for(let i = 0; i < filteredArr.length; i++) {
-
-    }
 
     // for(let name in list) {
     //     if(name.includes(e.target.value.toLowerCase())) {
