@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Odibee+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -23,7 +24,7 @@
                 <ul class="nav__menu nav__menu--animated">
 
                     <li class="nav__menu__item">
-                        <a href="" class="nav__menu__link" data-tool-tip="Home">
+                        <a href="#home" class="nav__menu__link" data-tool-tip="Home">
                             <svg class="icon--menu">
                                 <use xlink:href="img/icone/sprite.svg#icon-home"></use>
                             </svg>
@@ -39,15 +40,7 @@
                         </a>
                     </li>
                     <li class="nav__menu__item">
-                        <a href="" class="nav__menu__link" data-tool-tip="Blog">
-                            <svg class="icon--menu">
-                                <use xlink:href="img/icone/sprite.svg#icon-profile"></use>
-                            </svg>
-                            <!-- <span>Blog</span> -->
-                        </a>
-                    </li>
-                    <li class="nav__menu__item">
-                        <a href="" class="nav__menu__link" data-tool-tip="List">
+                        <a href="#list" class="nav__menu__link" data-tool-tip="Esplora">
                             <svg class="icon--menu">
                                 <use xlink:href="img/icone/sprite.svg#icon-eye"></use>
                             </svg>
@@ -55,7 +48,15 @@
                         </a>
                     </li>
                     <li class="nav__menu__item">
-                        <a href="" class="nav__menu__link" data-tool-tip="Contacts">
+                        <a href="#blog" class="nav__menu__link" data-tool-tip="Blog">
+                            <svg class="icon--menu">
+                                <use xlink:href="img/icone/sprite.svg#icon-profile"></use>
+                            </svg>
+                            <!-- <span>Blog</span> -->
+                        </a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="" class="nav__menu__link" data-tool-tip="Contatti">
                             <svg class="icon--menu">
                                 <use xlink:href="img/icone/sprite.svg#icon-pencil2"></use>
                             </svg>
@@ -66,11 +67,63 @@
             </nav>
         </header>
         <main>
-            <!-- <section class="home">
-
-        </section>
-        <section class="about"></section> -->
-            <section class="blog">
+            <section class="home" id="home">
+                <video class="home__bg" autoplay muted loop>
+                    <source src="video/1.mp4" type="video/mp4">
+                    <source src="video/2.mp4" type="video/mp4">
+                    <source src="video/2.webm" type="video/webm">
+                    <source src="video/2.mp4" type="video/mp4">
+                    <source src="video/3.webm" type="video/webm">
+                    Your browser is not supported
+                </video>
+                <h1 class="home__title">Busto Learning</h1>
+                <p class="home__intro">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odit incidunt distinctio
+                    laudantium sunt magni accusantium ipsam reprehenderit quibusdam corrupti optio quasi voluptatum
+                    dignissimos nesciunt vitae delectus explicabo ratione molestiae! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Voluptate, non nam sint tenetur eum corrupti ipsum eaque ad culpa
+                    nisi impedit optio! Veritatis sint amet officiis ad mollitia sequi ipsa? Lorem ipsum, dolor sit
+                    amet consectetur adipisicing elit. Nemo alias autem a provident quae similique iste inventore
+                    molestiae minus beatae. Esse fugit, a dignissimos impedit quod natus aspernatur officiis
+                    reprehenderit.
+                </p>
+            </section>
+            <section class="list" id="list">
+                <h1 class="list__title">
+                    <p>I nostri corsi:</p>
+                </h1>
+                <article class="search-bar" id="search-bar">
+                    <input type="text" class="search-bar__field" placeholder="Scrivi qui per filtrare i risultati">
+                </article>
+                <article class="list__options">
+                    <!-- <input id="list-svuota" type="checkbox" name="" value="svuota-lista"
+                                                        class="list__options__checkbox">
+                                                    <label for="list-svuota">svuota</label> -->
+                    <div class="list__options__order">
+                        <label for="option-select">Ordina per:</label>
+                        <select name="list-view-order" id="option-select">
+                            <option value="dog">Nome</option>
+                            <option value="cat">Quantità</option>
+                            <option value="hamster">Data di Aggiunta</option>
+                            <option value="parrot">Data di Modifica</option>
+                            <option value="spider">Voto</option>
+                            <option value="goldfish">Visualizzazioni</option>
+                        </select>
+                    </div>
+                    <div class="list__options__radio">
+                        <input type="radio" id="card-list" name="list-view-option" value="cards" checked>
+                        <label for="card-list">quadri</label>
+                        <input type="radio" id="list-list" name="list-view-option" value="list">
+                        <label for="list-list">lista</label>
+                    </div>
+                </article>
+                <article class="list__gallery">
+                    <ul class="gallery-grid">
+                    </ul>
+                </article>
+            </section>
+            <!--<section class="about"></section> -->
+            <section class="blog" id="blog">
                 <h1 class="blog__title">
                     Recent updates
                 </h1>
@@ -129,40 +182,6 @@
                          voluptatum quod ex eum ut magnam praesentium error. Nulla, incidunt veritatis. Ab recusandae consequuntur eum, dolor dicta non.
                         </textarea>
                     </form>
-                </article>
-            </section>
-            <section class="list">
-                <h1 class="list__title">
-                    I nostri corsi:
-                </h1>
-                <article class="search-bar" id="search-bar">
-                    <input type="text" class="search-bar__field" placeholder="Scrivi qui per filtrare i risultati">
-                </article>
-                <article class="list__options">
-                    <!-- <input id="list-svuota" type="checkbox" name="" value="svuota-lista"
-                        class="list__options__checkbox">
-                    <label for="list-svuota">svuota</label> -->
-                    <div class="list__options__order">
-                        <label for="option-select">Ordina per:</label>
-                        <select name="list-view-order" id="option-select">
-                            <option value="dog">Nome</option>
-                            <option value="cat">Quantità</option>
-                            <option value="hamster">Data di Aggiunta</option>
-                            <option value="parrot">Data di Modifica</option>
-                            <option value="spider">Voto</option>
-                            <option value="goldfish">Visualizzazioni</option>
-                        </select>
-                    </div>
-                    <div class="list__options__radio">
-                        <input type="radio" id="card-list" name="list-view-option" value="cards" checked>
-                        <label for="card-list">quadri</label>
-                        <input type="radio" id="list-list" name="list-view-option" value="list">
-                        <label for="list-list">lista</label>
-                    </div>
-                </article>
-                <article class="list__gallery">
-                    <ul class="gallery-grid">
-                    </ul>
                 </article>
             </section>
             <!-- <section class="contacts"></section> -->

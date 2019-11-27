@@ -1,0 +1,83 @@
+
+
+.home {
+    font-family: 'Calistoga', cursive;
+    grid-row: 1 / 2;
+    // align-self: stretch;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    height: 50rem;
+    height: 100vh;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr;
+    // justify-content: center;
+    // justify-items: center;
+    // align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -19;
+
+    @include responsive(tablet) {
+        margin-top: 4rem;
+        height: 33rem;
+    }
+
+    &__title {
+        // align-self: flex-end;
+        // grid-row: 1 / -1;
+        font-size: 4.5rem;
+        // -webkit-text-fill-color: $color-highlight; /* Will override color (regardless of order) */
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: #36424f;
+        text-transform: uppercase;
+        text-align: center;
+        // z-index: 0;
+
+        @include responsive(tablet) {
+            font-size: 3rem;
+            // padding: 2rem;
+            padding-top: 2rem;
+        }
+        
+    }
+    
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;           
+        overflow: hidden;
+        // opacity: .35;
+        z-index: -20;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    
+    &__intro {
+        font-family: 'Calistoga', cursive;
+        padding: 0 4rem;
+        // height: 10%;
+        // width: 65%;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2.5rem;
+        overflow: auto;
+        // -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        // -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-color: black;
+
+        // @include responsive(tablet) {
+        //     font-size: 2rem;
+        // }
+    }
+}

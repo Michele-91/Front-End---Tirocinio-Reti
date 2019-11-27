@@ -1,16 +1,17 @@
 .list {
-    margin-top: 5rem;
+    margin-top: 15rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 7rem auto auto;
     grid-gap: 1rem;
     justify-content: center;
+    min-height: 30rem;
     // margin-top: 10rem;
     // padding: 5rem;
 
-    // @include responsive(tablet) {
-    //     margin-top: 45rem;
-    // }
+    @include responsive(tablet) {
+        margin-top: 8rem;
+    }
 
 
     .list__title {
@@ -22,7 +23,12 @@
         color: $color-primary-dark;
         font-size: 3.5rem;
         text-transform: uppercase;
-        text-align: center;
+
+        p {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
     }
 
     .search-bar {
@@ -57,61 +63,17 @@
         border: 2px solid $color-primary-dark;
 
         @include responsive(tablet) {
-            // display: grid;
-            // width: 100%;
-            // justify-content: center;
-            // align-content: center;
-            // margin: 0;
+
             grid-template-columns: 1fr;
             grid-template-rows: repaet(4, 1fr);
-            // grid-gap: 1rem;
-            // grid-auto-flow: column;
 
-
-
-            // flex-direction: column;
-            // justify-content: space-around;
-            // align-items: center;
         }
-        
-        // label {
-        //     grid-column: 1 / -1;
-        //     // margin-left: .6rem;
-        //     // width: 50%;
-        //     cursor: pointer;
-
-        //     // @include responsive(tablet) {
-        //     //     margin: 0;
-        //     // }
-        // }
-
-        // &__checkbox {
-        //     grid-column: 1 / -1;
-        //     cursor: pointer;
-        // }
 
         &__radio {
             grid-column: 2 / -1;
             grid-row: 1 / -1;
             cursor: pointer;
-            // margin-left: 2rem;
 
-
-
-
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // flex-wrap: nowrap;
-            // width: 50%;
-            // height: 100%;
-
-            // @media all and (max-width: 700px) {
-            //     flex-direction: column;
-            //     justify-content: center;
-            //     align-items: center;
-            //     text-align: center;
-            // }
 
             @include responsive(tablet) {
                 grid-column: 1 / -1;
@@ -128,15 +90,6 @@
             grid-column: 1 / 2;
             grid-row: 1 / -1;
 
-
-
-
-            // cursor: pointer;
-            // width: 50%;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: center;
 
             @include responsive(tablet) {
                 grid-row: 2 / -1;
@@ -190,7 +143,6 @@
 
             p {
                 // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 78%, 0% 75%, 0% 25%);
-                // width: 100%;
                 font-family: 'Odibee Sans', cursive;
                 color: $color-highlight;
                 // background-color: $color-secondary-dark;
@@ -202,10 +154,6 @@
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: black;
             }
-        }
-
-        .gallery-item--list {
-
         }
     }
 }
