@@ -1,9 +1,10 @@
 .list {
-    margin-top: 12rem;
+    margin-top: 5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 7rem auto auto;
+    grid-gap: 1rem;
+    justify-content: center;
     // margin-top: 10rem;
     // padding: 5rem;
 
@@ -14,17 +15,22 @@
 
     .list__title {
         grid-column: 1 / -1;
+        grid-row: 1 / 2;
         justify-self: center;
         text-align: center;
         font-family: 'Lato', sans-serif;
         color: $color-primary-dark;
         font-size: 3.5rem;
         text-transform: uppercase;
+        text-align: center;
     }
 
     .search-bar {
         grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        // margin-top: 1rem;
         display: flex;
+        align-self: center;
         justify-content: center;
         .search-bar__field {
             font-size: 2rem;
@@ -34,40 +40,107 @@
     }
 
     &__options {
+        display: grid;
         grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        justify-items: center;
         margin: 0 auto;
-        display: flex;
-        justify-content: flex-start;
+        // justify-content: center;
         font-size: 1.8rem;
-        align-items: center;
-        height: 4rem;
-        width: 80%;
+        // align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid $color-primary-dark;
 
         @include responsive(tablet) {
-            display: grid;
-            width: 100%;
-            justify-content: center;
-            align-content: center;
-            margin: 0;
-            grid-template-rows: 30% 70%;
-            grid-gap: 1rem;
-            grid-auto-flow: column;
+            // display: grid;
+            // width: 100%;
+            // justify-content: center;
+            // align-content: center;
+            // margin: 0;
+            grid-template-columns: 1fr;
+            grid-template-rows: repaet(4, 1fr);
+            // grid-gap: 1rem;
+            // grid-auto-flow: column;
+
+
+
+            // flex-direction: column;
+            // justify-content: space-around;
+            // align-items: center;
         }
         
-        label {
-            margin-left: .6rem;
-            cursor: pointer;
-        }
+        // label {
+        //     grid-column: 1 / -1;
+        //     // margin-left: .6rem;
+        //     // width: 50%;
+        //     cursor: pointer;
 
-        &__checkbox {
-            grid-column: 1 / -1;
-            cursor: pointer;
-        }
+        //     // @include responsive(tablet) {
+        //     //     margin: 0;
+        //     // }
+        // }
+
+        // &__checkbox {
+        //     grid-column: 1 / -1;
+        //     cursor: pointer;
+        // }
 
         &__radio {
-            grid-column: 1 / -1;
+            grid-column: 2 / -1;
+            grid-row: 1 / -1;
             cursor: pointer;
-            margin-left: 2rem;
+            // margin-left: 2rem;
+
+
+
+
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // flex-wrap: nowrap;
+            // width: 50%;
+            // height: 100%;
+
+            // @media all and (max-width: 700px) {
+            //     flex-direction: column;
+            //     justify-content: center;
+            //     align-items: center;
+            //     text-align: center;
+            // }
+
+            @include responsive(tablet) {
+                grid-column: 1 / -1;
+                grid-row: 1 / 2;
+            }
+
+            label {
+                // margin-left: 1rem;
+                padding-right: 1.5rem;
+            }
+        }
+
+        &__order {
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+
+
+
+
+            // cursor: pointer;
+            // width: 50%;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+
+            @include responsive(tablet) {
+                grid-row: 2 / -1;
+            }
         }
     }
 

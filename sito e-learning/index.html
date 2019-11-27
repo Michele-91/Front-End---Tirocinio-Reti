@@ -70,8 +70,8 @@
 
         </section>
         <section class="about"></section> -->
-        <section class="blog">
-            <h1 class="blog__title">
+            <section class="blog">
+                <h1 class="blog__title">
                     Recent updates
                 </h1>
                 <article class="view-article">
@@ -117,7 +117,7 @@
                         <label class="form-label" for="passwordes">Inserisci una password:</label>
                         <input class="form-input" type="password" id="passwordes" name="password" minlength="6"
                             required>
-                            <label class="form-label" for="file">Carica foto: </label>
+                        <label class="form-label" for="file">Carica foto: </label>
                         <input class="form-input" type="file" id="file" name="file" accept="image/jpg">
                         <label class="form-label" for="passwordes">Contenuto del post:</label>
                         <textarea class="form-input" name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -131,29 +131,40 @@
                     </form>
                 </article>
             </section>
-        <section class="list">
-            <h1 class="list__title">
-                I nostri corsi:
-            </h1>
-            <article class="search-bar" id="search-bar">
-                <input type="text" class="search-bar__field" placeholder="Scrivi qui per filtrare i risultati">
-            </article>
-            <article class="list__options">
-                <input id="list-svuota" type="checkbox" name="" value="svuota-lista"
-                    class="list__options__checkbox">
-                <label for="list-svuota">svuota visualizzazione</label>
-                <input type="radio" id="card-list" name="list-view-option" value="cards"
-                    class="list__options__radio" checked>
-                <label for="card-list">quadri</label>
-                <input type="radio" id="list-list" name="list-view-option" value="list"
-                    class="list__options__radio">
-                <label for="list-list">lista</label>
-            </article>
-            <article class="list__gallery">
-                <ul class="gallery-grid">
-                </ul>
-            </article>
-        </section>
+            <section class="list">
+                <h1 class="list__title">
+                    I nostri corsi:
+                </h1>
+                <article class="search-bar" id="search-bar">
+                    <input type="text" class="search-bar__field" placeholder="Scrivi qui per filtrare i risultati">
+                </article>
+                <article class="list__options">
+                    <!-- <input id="list-svuota" type="checkbox" name="" value="svuota-lista"
+                        class="list__options__checkbox">
+                    <label for="list-svuota">svuota</label> -->
+                    <div class="list__options__order">
+                        <label for="option-select">Ordina per:</label>
+                        <select name="list-view-order" id="option-select">
+                            <option value="dog">Nome</option>
+                            <option value="cat">Quantità</option>
+                            <option value="hamster">Data di Aggiunta</option>
+                            <option value="parrot">Data di Modifica</option>
+                            <option value="spider">Voto</option>
+                            <option value="goldfish">Visualizzazioni</option>
+                        </select>
+                    </div>
+                    <div class="list__options__radio">
+                        <input type="radio" id="card-list" name="list-view-option" value="cards" checked>
+                        <label for="card-list">quadri</label>
+                        <input type="radio" id="list-list" name="list-view-option" value="list">
+                        <label for="list-list">lista</label>
+                    </div>
+                </article>
+                <article class="list__gallery">
+                    <ul class="gallery-grid">
+                    </ul>
+                </article>
+            </section>
             <!-- <section class="contacts"></section> -->
         </main>
     </div>
