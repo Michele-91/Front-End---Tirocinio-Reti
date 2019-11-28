@@ -8,6 +8,7 @@ let home = document.querySelector('#home');
 let esplora = document.querySelector('#list');
 let blog = document.querySelector('#blog');
 let observerArr = [home, esplora, blog];
+// let observerArr = document.querySelectorAll('origin');
 
 menuButton.addEventListener('click', (e) => {
     menuDisplay.classList.toggle('nav__menu--animated');
@@ -23,27 +24,32 @@ menuButton.addEventListener('click', (e) => {
 // document.addEventListener('load', function () {
 
 // });
-const options = {
-    root: null,
-    threshold: 0,
-    rootMargin: "-150px 0px -200px 0px"
-};
-
-
-let observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(entry => {
-        // if(!entry.isIntersecting) {
-        //     return;
-        // }
-        
-        console.log(entry.target);
-        // observer.unobserve(entry.target);
-    })
-}, options);
-// observer.observe(esplora);
 
 
 
-observerArr.forEach(el => {
-    observer.observe(el);
-})
+// const options = {
+//     root: null,
+//     threshold: 0.1,
+//     // rootMargin: "-0px 0px 0px 0px"
+// };
+
+
+// let observer = new IntersectionObserver(function (entries, observer) {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting) {
+//             entry.target.style.animation = 'appear .6s forwards ease-in';
+//             entry.target.style.animationIterationCount = '1';
+//         }
+//         else {
+//             entry.target.style.animationIterationCount = '1';
+//             entry.target.style.animation = 'none';
+//         }
+//         // observer.unobserve(entry.target);
+//     })
+// }, options);
+
+
+
+// observerArr.forEach(el => {
+//     observer.observe(el);
+// })

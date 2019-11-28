@@ -4,110 +4,47 @@ let list = {
     javascript: {
         name: "javascript", 
         description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
+        // amount: 0,
+        // added: 0,
+        // edited: 0,
+        // stars: 0,
+        // students: 0
     },
     react: {
         name: "react", 
         description: "This is a React course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
+        // amount: 0,
+        // added: 0,
+        // edited: 0,
+        // stars: 0,
+        // students: 0
     }, 
     css: {
         name: "CSS", 
         description: "This is a css course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
+        // amount: 0,
+        // added: 0,
+        // edited: 0,
+        // stars: 0,
+        // students: 0
     },
     typescript: {
         name: "typescript", 
-        description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
+        description: "This is a typescript course",
+        // amount: 0,
+        // added: 0,
+        // edited: 0,
+        // stars: 0,
+        // students: 0
     },
     angular: {
         name: "angular", 
-        description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
-    },
-    html: {
-        name: "html", 
-        description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
-    },
-    html: {
-        name: "html", 
-        description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
-    },
-    html: {
-        name: "html", 
-        description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
-    },
-    html: {
-        name: "html", 
-        description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
-    },
-    html: {
-        name: "html", 
-        description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
-    },
-    html: {
-        name: "html", 
-        description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
-    },
-    html: {
-        name: "html", 
-        description: "This is a javascript course",
-        amount: 0,
-        added: 0,
-        edited: 0,
-        stars: 0,
-        students: 0
+        description: "This is an angular course",
+        // amount: 0,
+        // added: 0,
+        // edited: 0,
+        // stars: 0,
+        // students: 0
     }
 }
 
@@ -175,7 +112,6 @@ let iterate = function(regEx, len) {
             removeNewElement(listItem[0], regEx);
         }
     }
-
 }
 
 
@@ -185,3 +121,5 @@ inputFilter.addEventListener('input', function (e) {
     iterate(regEx, e.target.value.length);
 
 });
+
+
