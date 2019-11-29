@@ -53,6 +53,7 @@ let list = {
 let presentCheck = {};
 
 // selezione <ul> che contiene gli elementi della lista nella pagina HTML
+// let selectContainer = document.querySelector('.gallery-grid');
 let selectContainer = document.querySelector('.gallery-grid');
 // selezione barra di ricerca nella pagina HTML
 let inputFilter = document.querySelector('.search-bar__field');
@@ -63,8 +64,6 @@ let selection = document.querySelectorAll('.gallery-item');
 
 let dropdownItems = document.querySelector('select');
 let drop = document.querySelectorAll('option');
-// let arr = [];
-// let newArr = Array.from(list);
 let sortValue = dropdownItems[0].value;
 
 // se la stringa passata non è composta da zero caratteri (e perciò non deve avvenire alcuna visualizzazione),
@@ -74,21 +73,47 @@ let sortValue = dropdownItems[0].value;
 let addNewElement = function (text) {
 
     if (Object.keys(presentCheck).length == 0 || !presentCheck[text]) {
-        let newLi = document.createElement('li');
+        // let newLi = document.createElement('li');
+        // newLi.classList.add('gallery-item');
+        // newLi.classList.add(text);
+        // selectContainer.append(newLi);
+        // let newDiv = document.createElement('div');
+        // newDiv.classList.add('gallery-item__pic');
+        // newLi.append(newDiv);
+        // let newPic = document.createElement('img');
+        // newPic.setAttribute("src", "https://picsum.photos/300/200");
+        // newPic.setAttribute("alt", "gallery-picture");
+        // newDiv.append(newPic);
+        // let newP = document.createElement('p');
+        // newP.classList.add('gallery-item__para');
+        // newP.textContent = text;
+        // newLi.append(newP);
+        // presentCheck[text] = text;
+        let newLi = document.createElement('tr');
         newLi.classList.add('gallery-item');
         newLi.classList.add(text);
         selectContainer.append(newLi);
-        let newDiv = document.createElement('div');
-        newDiv.classList.add('gallery-item__pic');
-        newLi.append(newDiv);
-        let newPic = document.createElement('img');
-        newPic.setAttribute("src", "https://picsum.photos/300/200");
-        newPic.setAttribute("alt", "gallery-picture");
-        newDiv.append(newPic);
-        let newP = document.createElement('p');
-        newP.classList.add('gallery-item__para');
-        newP.textContent = text;
-        newLi.append(newP);
+        let nameTD = document.createElement('td');
+        nameTD.textContent = list[text].name;
+        newLi.append(nameTD);
+        let descriptionTD = document.createElement('td');
+        descriptionTD.textContent = list[text].description;
+        newLi.append(descriptionTD);
+        let amountTD = document.createElement('td');
+        amountTD.textContent = list[text].amount;
+        newLi.append(amountTD);
+        let starsTD = document.createElement('td');
+        starsTD.textContent = list[text].stars;
+        newLi.append(starsTD);
+        let addedTD = document.createElement('td');
+        addedTD.textContent = list[text].added;
+        newLi.append(addedTD);
+        let editTD = document.createElement('td');
+        editTD.textContent = list[text].edit;
+        newLi.append(editTD);
+        let studentsTD = document.createElement('td');
+        studentsTD.textContent = list[text].students;
+        newLi.append(studentsTD);
         presentCheck[text] = text;
 
         newLi.dataset.name = list[text].name;
@@ -180,16 +205,3 @@ dropdownItems.addEventListener('change', function (e) {
     sortValue = e.target.value;
     sortController(sortValue);
 });
-
-
-// function optionsControl() {
-//     let drop = document.querySelectorAll('.select');
-//     for(let i = 0; i < drop.length; i++) {
-//         console.dir(drop[i].textContent);
-//         drop[i].addEventListener('change', function() {
-//             console.log(drop[i].textContent);
-//         });
-//     }
-// }
-
-// optionsControl();

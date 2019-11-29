@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Zebra striping */
+        tr:nth-of-type(odd) {
+            background: #eee;
+        }
+
+        th {
+            background: #333;
+            color: white;
+            font-weight: bold;
+        }
+
+        td,
+        th {
+            padding: 6px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>descrizione</th>
+                <th>quantità</th>
+                <th>voto</th>
+                <th>studenti</th>
+                <th>data di ultima modifica</th>
+                <th>data di aggiunta</th>
+            </tr>
+        </thead>
+        <tbody class="gallery-grid">
+            <tr class="gallery-item">
+                <td>James</td>
+                <td>Matman</td>
+                <td>Chief Sandwich Eater</td>
+            </tr>
+            <tr>
+                <td>The</td>
+                <td>Tick</td>
+                <td>Crimefighter Sorta</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

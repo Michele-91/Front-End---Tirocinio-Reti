@@ -99,71 +99,113 @@
 
     &__gallery {
         grid-column: 1 / -1;
-        border-top: 2px solid $color-primary-dark;
-        border-bottom: 2px solid $color-primary-dark;
         background-color: $color-primary-light;
 
-    
-        .gallery-grid {
-            grid-column: 1 / -1;
+        table {
+            table-layout: fixed;
+            width: 100%;
+            // border-collapse: collapse;
+            border: 3px solid purple;
             padding: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-            // grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
-            grid-template-rows: 1fr;
-            grid-gap: 2rem;
-            // max-height: 50rem;
-
-            list-style-type: none;
-
-            @media all and (min-width: 600px) {
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-auto-flow: row;
-            }
-
-            @include responsive(tablet) {
-                grid-template-columns: 1fr;
-                // width: 100px;
-                // grid-auto-flow: dense;
-            }
+            border: 2px solid black;
         }
 
-        .gallery-item {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            // flex-wrap: nowrap;
-            // margin: .5rem 0;
-            // padding: 3rem 0;
-            // box-shadow: 8px 8px 2px 0px rgba(161,161,161,1);
-            border: 3px solid #566270;
-            // border-radius: 50px;
+        .gallery-head, .gallery-grid {
 
-            div {
-                align-self: stretch;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    // border-radius: 30px;
-                }
-            }
+            width: 100%;
+            // thead th:nth-child(1) {
+            //     width: 30%;
+            //   }
+              
+            //   thead th:nth-child(2) {
+            //     width: 20%;
+            //   }
+              
+            //   thead th:nth-child(3) {
+            //     width: 15%;
+            //   }
+              
+            //   thead th:nth-child(4) {
+            //     width: 35%;
+            //   }
+              
+            //   th, td {
+            //     padding: 20px;
+            //   }
 
-            p {
-                // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 78%, 0% 75%, 0% 25%);
-                font-family: 'Odibee Sans', cursive;
-                color: $color-highlight;
-                // background-color: $color-secondary-dark;
-                text-align: center;
-                margin: 1.5rem 0;
-                font-size: 3.5rem;
-                color: black;
-                -webkit-text-fill-color: $color-highlight; /* Will override color (regardless of order) */
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: black;
+            td {
+                height: 2rem;
             }
         }
     }
+
+    // &__gallery {
+    //     grid-column: 1 / -1;
+    //     border-top: 2px solid $color-primary-dark;
+    //     border-bottom: 2px solid $color-primary-dark;
+    //     background-color: $color-primary-light;
+
+    
+    //     .gallery-grid {
+    //         grid-column: 1 / -1;
+    //         padding: 2rem;
+    //         display: grid;
+    //         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    //         // grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+    //         grid-template-rows: 1fr;
+    //         grid-gap: 2rem;
+    //         // max-height: 50rem;
+
+    //         list-style-type: none;
+
+    //         @media all and (min-width: 600px) {
+    //             grid-template-columns: 1fr 1fr 1fr;
+    //             grid-auto-flow: row;
+    //         }
+
+    //         @include responsive(tablet) {
+    //             grid-template-columns: 1fr;
+    //             // width: 100px;
+    //             // grid-auto-flow: dense;
+    //         }
+    //     }
+
+    //     .gallery-item {
+    //         background-color: white;
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         // flex-wrap: nowrap;
+    //         // margin: .5rem 0;
+    //         // padding: 3rem 0;
+    //         // box-shadow: 8px 8px 2px 0px rgba(161,161,161,1);
+    //         border: 3px solid #566270;
+    //         // border-radius: 50px;
+
+    //         div {
+    //             align-self: stretch;
+    //             img {
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 object-fit: cover;
+    //                 // border-radius: 30px;
+    //             }
+    //         }
+
+    //         p {
+    //             // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 78%, 0% 75%, 0% 25%);
+    //             font-family: 'Odibee Sans', cursive;
+    //             color: $color-highlight;
+    //             // background-color: $color-secondary-dark;
+    //             text-align: center;
+    //             margin: 1.5rem 0;
+    //             font-size: 3.5rem;
+    //             color: black;
+    //             -webkit-text-fill-color: $color-highlight; /* Will override color (regardless of order) */
+    //             -webkit-text-stroke-width: 1px;
+    //             -webkit-text-stroke-color: black;
+    //         }
+    //     }
+    // }
 }
 
