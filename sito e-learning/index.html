@@ -103,12 +103,13 @@
                     <div class="list__options__order">
                         <label for="option-select">Ordina per:</label>
                         <select name="list-view-order" id="option-select">
-                            <option value="dog">Nome</option>
-                            <option value="cat">Quantità</option>
-                            <option value="hamster">Data di Aggiunta</option>
-                            <option value="parrot">Data di Modifica</option>
-                            <option value="spider">Voto</option>
-                            <option value="goldfish">Visualizzazioni</option>
+                            <option class="select select-name" value="name" selected>Nome</option>
+                            <option class="select select-number" value="amount">Quantità</option>
+                            <option class="select select-date-add" value="added">Data di Aggiunta</option>
+                            <option class="select select-date-edit" value="edit">Data di Modifica</option>
+                            <option class="select select-date-stars" value="stars">Voto</option>
+                            <option class="select select-date-students" value="students">Studenti</option>
+                            <!-- <option class="select select-date-views" value="views">Visualizzazioni</option> -->
                         </select>
                     </div>
                     <div class="list__options__radio">
@@ -187,6 +188,7 @@
             <!-- <section class="contacts"></section> -->
         </main>
     </div>
+    <script src="lib/moment/moment.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/list.js"></script>
